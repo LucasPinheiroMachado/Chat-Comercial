@@ -1,0 +1,38 @@
+.beginConversation{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: rgba(255, 140, 0, 0.1);
+    color: #FF8C00;
+    border: 1px solid rgba(255, 140, 0, 0.3);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px); 
+    position: relative;
+    bottom: 5vh;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.btn01{
+    background-color: #FF8C00;
+    color: white;
+}
+
+@media (max-width: 600px){
+    .beginConversation{
+        flex-direction: column;
+    }
+    .btn {
+        width: 90vw;
+        margin-bottom: 5px;
+    }
+}

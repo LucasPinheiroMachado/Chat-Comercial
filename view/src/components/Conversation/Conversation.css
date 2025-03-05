@@ -1,0 +1,73 @@
+.conversation-link {
+  text-decoration: none;
+}
+
+.conversation {
+  width: 100vw;
+  height: 80px;
+  background-color: rgba(255, 248, 240, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 140, 0, 0.1);
+  padding: 0 20px;
+  backdrop-filter: blur(4px);
+}
+
+.conversation img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 140, 0, 0.2);
+}
+
+.conversation h2 {
+  font-size: 18px;
+  color: #FF8C00;
+  margin: 0;
+  font-weight: 600;
+}
+
+.conversation p {
+  font-size: 14px;
+  color: rgba(255, 140, 0, 0.8);
+  margin: 0;
+}
+
+.imgAndUser {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.last-message {
+  font-size: 14px;
+  color: #777777 !important;
+  margin: 0;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lastMessageDate {
+  font-size: 12px;
+  color: rgba(255, 140, 0, 0.6);
+  margin: 0;
+}
+
+@media (max-width: 400px){
+  .last-message {
+    font-size: 14px;
+    color: #777777 !important;
+    margin: 0;
+    max-width: 185px;
+  }
+}

@@ -1,0 +1,138 @@
+.searchMenu {
+  position: relative;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fffaf5;
+  box-shadow: 0 2px 10px rgba(255, 140, 0, 0.1);
+  text-align: center;
+}
+
+.logoutButton {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #fd1c0c;
+  color: black;
+}
+
+.navigationButtons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.navButton {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background-color: rgba(255, 140, 0, 0.1);
+  color: #FF8C00;
+  border: 1px solid rgba(255, 140, 0, 0.3);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.navButton:hover {
+  background-color: rgba(255, 140, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.navButton.active {
+  background-color: #FF8C00;
+  color: white;
+  box-shadow: 0 3px 8px rgba(255, 140, 0, 0.2);
+}
+
+.searchInputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.searchInput {
+  padding: 12px;
+  font-size: 1.1rem;
+  width: 300px;
+  border: 1px solid rgba(255, 140, 0, 0.3);
+  background-color: rgba(255, 140, 0, 0.05);
+  color: #FF8C00;
+  outline: none;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.searchInput:focus {
+  border-color: #FF8C00;
+  box-shadow: 0 0 8px rgba(255, 140, 0, 0.1);
+}
+
+.searchButton {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.searchButton:hover {
+  background-color: #ff7300;
+  transform: translateY(-2px);
+  
+}
+
+@media (max-width: 600px){
+  .logoutButton {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: 6px 10px;
+  }
+
+  .navigationButtons {
+    gap: 5px;
+  }
+
+  .navButton {
+    padding: 9px 20px;
+    font-size: 0.9rem;
+  }
+
+  .searchInput {
+    padding: 12px;
+    font-size: 0.9rem;
+    width: 250px;
+  }
+
+  .searchButton {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px){
+  .searchInput {
+    font-size: 0.8rem;
+    width: 240px;
+  }
+
+  .searchButton {
+    font-size: 0.8rem;
+  }
+}
