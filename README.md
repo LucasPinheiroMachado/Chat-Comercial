@@ -12,12 +12,12 @@ Por fim, configure o arquivo `config.jsx` na view para colocar o caminho correto
 
 ## OBS:
 
-### Restrição
-
-A view só permite criar usuários do tipo "standard" para criar do tipo "admin" rode direto do SQL.
-
 ### Regras de negócio
 
 1: Um "admin" pode coversar com qualquer usuário, porém um "standard" só pode conversar com um "admin".
 
 2: O login é único, então um usuário não pode ter o mesmo login que outro.
+
+### Restrição
+
+A view só permite criar usuários do tipo "standard" para criar do tipo "admin" rode direto do SQL.
